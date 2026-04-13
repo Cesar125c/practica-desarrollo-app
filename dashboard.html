@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - Personajes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="characters-page">
+    <button class="logout-button" onclick="logout()">🚪 Cerrar Sesión</button>
+    
+    <h1>🌟 Personajes de Rick and Morty 🌟</h1>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Buscar personaje por nombre..." class="search-input">
+            <button id="clearSearch" class="clear-btn" style="display: none;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="search-info">
+            <span id="resultsCount"></span>
+        </div>
+    </div>
+    
+    <main id="charactersContainer"></main>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>

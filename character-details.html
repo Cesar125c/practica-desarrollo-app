@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty - Detalles del Personaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="details-page">
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button class="nav-btn back-btn" onclick="goBackToList()">
+            <i class="fas fa-arrow-left"></i> Volver al listado
+        </button>
+        <button class="nav-btn logout-btn" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+        </button>
+    </div>
+    
+    <div class="details-container" id="detailsContainer">
+        <div class="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Cargando información del personaje...</p>
+        </div>
+    </div>
+    
+    <script src="character-details.js"></script>
+</body>
+</html>
